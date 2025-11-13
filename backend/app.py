@@ -33,5 +33,7 @@ app.register_blueprint(auth_bp, url_prefix="/auth")
 def index():
     return "Bienvenido a Battio Lab API"
 
+#if __name__ == "__main__":
+#    app.run(debug=True)
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=8000) # <- Añadir port=8000

@@ -44,7 +44,7 @@ class LoginApp:
             messagebox.showwarning("Error", "Por favor, completa todos los campos.")
             return
 
-        url = "http://127.0.0.1:5000/auth/login"
+        url = "http://127.0.0.1:8000/auth/login"
         data = {"username": username, "password": password}
 
         try:
